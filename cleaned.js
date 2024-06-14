@@ -41,7 +41,7 @@ const XOR = (n, W, t) => W ? n ^ t[0] : n,
 let animationStr;
 const setAnimationStr = KEY => {
     const [index, frameTime] = [KEY[2] % 16, KEY[12] % 16 * (KEY[14] % 16) * (KEY[7] % 16)],
-    arr = get2DArray(".r-32hy0", KEY);
+    arr = get2DArray(".r-1p0dtai", KEY);
     const [newDiv, deleteDiv] = createDiv();
     doAnimation(newDiv, arr[index], frameTime);
     const style = getComputedStyle(newDiv);
